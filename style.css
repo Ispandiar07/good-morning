@@ -1,0 +1,34 @@
+body {
+    font-family: sans-serif;
+    background-color: #f8f0e3; /* Нежный бежевый фон */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1 {
+    color: #e44d26; /* Приятный оранжевый цвет */
+    margin-bottom: 20px;
+}
+
+p {
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    font-size: 1.1em;
+}
+
+.signature {
+    font-style: italic;
+    color: #777;
+}
