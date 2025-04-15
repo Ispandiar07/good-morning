@@ -1,14 +1,13 @@
 document.addEventListener('DOMContentLoaded', function() {
     const poemElement = document.getElementById('poem');
     const poemText = `
-        Поцеловать бы нежно-нежно,
-        Прижать покрепче бы к себе...
-        С тобою рядом безмятежно,
-        Я так хочу сейчас к тебе.
-
-        Тебя с днем новым поздравляю,
-        Привет я шлю тебе большой.
-        Я утра доброго желаю
+        Поцеловать бы нежно-нежно,<br>
+        Прижать покрепче бы к себе...<br>
+        С тобою рядом безмятежно,<br>
+        Я так хочу сейчас к тебе.<br><br>
+        Тебя с днем новым поздравляю,<br>
+        Привет я шлю тебе большой.<br>
+        Я утра доброго желаю<br>
         И так скучаю всей душой.
     `;
 
@@ -17,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function typeWriter() {
         if (index < poemText.length) {
-            poemElement.textContent += poemText.charAt(index);
+            poemElement.innerHTML += poemText.charAt(index); // Используем innerHTML для обработки <br>
             index++;
             setTimeout(typeWriter, speed);
         }
